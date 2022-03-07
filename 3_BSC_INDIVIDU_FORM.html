@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
+	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+	<title>3_BSC INDIVIDU FORM</title>
+</head>
+<body class="bg-grey">
+	<div class="main mb-5">
+		<div class="container-fluid content">
+			<div class="header">
+				<div class="container-fluid">
+					<nav class="navbar navbar-expand-lg navbar-light bg-grey py-4">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">
+								<img src="assets/img/logo-berwarna.png" alt=""class="d-inline-block align-text-top navbar-logo">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<div class="d-flex justify-content-end navbar-custom w-100 align-items-center">
+									<ul class="navbar-nav mb-2 mb-lg-0 mx-4 mt-mobile-5">
+										<li class="nav-item mx-2">
+											<div class="input-group">
+												<input type="text" class="form-control custom-form-control" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+												<span class="input-group-text border-0 bg-white" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+											</div>
+										</li>
+										<div class="d-flex justify-content-end notification-group align-items-center">
+											<li class="nav-item mx-2 notification-item">
+												<a class="nav-link badge-notif" data-badge="12" href="#">
+													<i class="fa-solid fa-bell"></i>
+												</a>
+											</li>
+											<li class="nav-item notification-item">
+												<a class="nav-link"><i class="fa-solid fa-fill-drip"></i></a>
+											</li>
+										</div>
+										
+										<li class="nav-item mx-2">
+											<a class="nav-link"></a>
+										</li>
+									</ul>
+									<div class="topbar-profile d-flex justify-content-between">
+										<div class="lh-1 mx-4">
+											<div class="text-orange">Hi, Staff Name</div>
+											<div>Have a Wonderful day</div>
+										</div>
+										<div class="img-topbar rounded" style="background-image: url('assets/img/background.jpg');">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="main-content w-100">
+				<div class="row d-flex justify-content-center p-4">
+					<div class="col-1">
+						<div class="sidebar-button bg-orange p-4 rounded-r-10px">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link text-white" href=""><i class="fa-solid fa-list"></i></a>
+									<a class="nav-link text-white" href=""><i class="fa-solid fa-star"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-11 ms-5">
+						<div class="row w-100">
+							<div class="col-lg-6">
+								<div class="text-dark bg-grey-form mb-4 w-100 my-auto py-2 rounded-5px px-2">
+									<div class="row d-flex">
+										<div class="col-1">
+											<i class="fa-solid fa-circle-exclamation"></i>	
+										</div>
+										<div class="col-10">
+											<nav aria-label="breadcrumb w-100">
+												<ol class="breadcrumb my-auto ms-3 w-100">
+												</ol>
+											</nav>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card card-login card-shadow">
+							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-25px">
+								IDP Peer Assignment 2020-2
+							</div>
+							<div class="card-body bg-grey">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-12 table-responsive">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="d-flex align-items-center w-80vh">
+														<label class="fw-bold text-orange w-50">Learning & Growth Prerspective</label>
+														<div class="input-group mb-3 w-25 ms-5">
+															<input type="text" class="form-control border-orange" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2" value="10">
+															<span class="input-group-text text-white bg-orange border-0" id="basic-addon2">%</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<button class="btn bg-dark float-end text-white"><i class="fa-solid fa-gear"></i> Maintenance</button>
+												</div>
+											</div>
+											<table class="table table-borderless mt-2" id="contoh1">
+												<thead class="table-orange">
+													<tr class="text-center">
+														<th>KPI</th>
+														<th>Unit Dept</th>
+														<th>Target/Unit KPI</th>
+														<th>Group</th>
+														<th>Wight/Rubric</th>
+														<th>Calc</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Indeks Kepuasan Karyawan</td>
+														<td class="text-center">%</td>
+														<td class="text-center" colspan="2"><p class="bg-grey-table">80.00000</p></td>
+														<td class="text-center"><p class="bg-grey-table">5.0000</p></td>
+														<td class="text-center"><p class="bg-grey-table"></p></td>
+														<td class="text-center"><button class="btn bg-blue text-white rounded-0 btn-sm"><i class="fas fa-plus"></i></button></td>
+													</tr>
+													<tr>
+														<td>Pencapaian Roadmap Integrated Information System</td>
+														<td class="text-center">%</td>
+														<td class="text-center" colspan="2"><p class="bg-grey-table">80.00000</p></td>
+														<td class="text-center"><p class="bg-grey-table">3.0000</p></td>
+														<td class="text-center"><p class="bg-grey-table"></p></td>
+														<td class="text-center"><button class="btn bg-blue text-white rounded-0 btn-sm"><i class="fas fa-plus"></i></button></td>
+													</tr>
+													<tr>
+														<td>Pemenuhan Kompetensi Jabatan</td>
+														<td class="text-center">%</td>
+														<td class="text-center" colspan="2"><p class="bg-grey-table">80.00000</p></td>
+														<td class="text-center"><p class="bg-grey-table">2.0000</p></td>
+														<td class="text-center"><p class="bg-grey-table"></p></td>
+														<td class="text-center"><button class="btn bg-blue text-white rounded-0 btn-sm"><i class="fas fa-plus"></i></button></td>
+													</tr>
+													<tr>
+														<td colspan="2">Perncapaian Roadmap Integrated and Information System</td>
+														<td class="text-center">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>Index</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center" colspan="2">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>ICT Superior Helpdesk</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center">
+															<div class="input-group">
+																<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																	<option selected>ICT Roadmap</option>
+																	<option value="1">One</option>
+																</select>
+																<span class="input-group-text border-0 bg-grey-form" id="basic-addon2"><i class="fa-solid fa-circle-exclamation"></i></span>
+															</div>
+														</td>
+														<td class="text-center"><button class="btn bg-danger text-white rounded-0 btn-sm"><i class="fas fa-trash"></i></button></td>
+													</tr>
+													<tr>
+														<td colspan="2">Perncapaian Roadmap Integrated and Information System</td>
+														<td class="text-center">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>Index</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center" colspan="2">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>ICT Helpdesk</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center">
+															<div class="input-group">
+																<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																	<option selected>ICT Roadmap</option>
+																	<option value="1">One</option>
+																</select>
+																<span class="input-group-text border-0 bg-grey-form" id="basic-addon2"><i class="fa-solid fa-circle-exclamation"></i></span>
+															</div>
+														</td>
+														<td class="text-center"><button class="btn bg-danger text-white rounded-0 btn-sm"><i class="fas fa-trash"></i></button></td>
+													</tr>
+													<tr>
+														<td colspan="2">Perncapaian Roadmap Integrated and Information System</td>
+														<td class="text-center">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>Index</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center" colspan="2">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>ICT Spv Network Infrastructure</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center">
+															<div class="input-group">
+																<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																	<option selected>ICT Roadmap</option>
+																	<option value="1">One</option>
+																</select>
+																<span class="input-group-text border-0 bg-grey-form" id="basic-addon2"><i class="fa-solid fa-circle-exclamation"></i></span>
+															</div>
+														</td>
+														<td class="text-center"><button class="btn bg-danger text-white rounded-0 btn-sm"><i class="fas fa-trash"></i></button></td>
+													</tr>
+													<tr>
+														<td colspan="2">Perncapaian Roadmap Integrated and Information System</td>
+														<td class="text-center">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>Index</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center" colspan="2">
+															<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																<option selected>ICT Network Infrastruktur</option>
+																<option value="1">One</option>
+															</select>
+														</td>
+														<td class="text-center">
+															<div class="input-group">
+																<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																	<option selected>ICT Roadmap</option>
+																	<option value="1">One</option>
+																</select>
+																<span class="input-group-text border-0 bg-grey-form" id="basic-addon2"><i class="fa-solid fa-circle-exclamation"></i></span>
+															</div>
+														</td>
+														<td class="text-center"><button class="btn bg-danger text-white rounded-0 btn-sm"><i class="fas fa-trash"></i></button></td>
+													</tr>
+												</tbody>
+												<tfoot class="bg-dark">
+													<tr class="text-center text-white">
+														<th>Total Wight</th>
+														<th colspan="3">10%</th>
+														<th></th>
+														<th></th>
+														<th></th>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-white">
+		<div class="container pt-4">
+			<div class="row d-flex justify-content-between social-media">
+				<div class="col-md-6 py-2  d-flex align-items-center justify-content-start justify-content-center-mobile">
+					<p class="text-secondary fw-bold align-middle fs-5 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
+				</div>
+				<div class="col-md-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
+					<div class="d-flex align-items-center justify-content-between text-white">
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-twitter"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-facebook"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-youtube"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-linkedin-in"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid d-flex justify-content-around text-white bg-gradient-orange py-4 position-relative">
+			<div class="footer-left d-flex justify-content-around">
+				<ul class="navbar-nav">
+					<li class="nav-item text-center fw-bold">
+						Get in Touch with Us
+					</li>
+				</ul>
+				<ul class="navbar-nav px-5">
+					<li class="nav-item text-center">
+						<i class="fa-solid fa-location-dot me-2"></i>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219
+					</li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<ul class="navbar-nav">
+					<li class="nav-item text-center">
+						2022 | by ICT Universitas Ciputra
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/fontawesome/js/all.js"></script>
+</html>
