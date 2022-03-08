@@ -46,6 +46,10 @@
 		justify-content: center !important;
 	}
 
+	.flex-column-mobile{
+		flex-direction: column !important;
+	}
+
 	/*width*/
 
 

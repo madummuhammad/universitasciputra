@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="assets/plugins/datatable/datatable/css/dataTables.bootstrap5.min.css">
+	<title>5_1_PA_MONITORING</title>
+</head>
+<body class="bg-grey">
+	<div class="main mb-5">
+		<div class="container-fluid content">
+			<div class="header">
+				<div class="container-fluid">
+					<nav class="navbar navbar-expand-lg navbar-light bg-grey py-4">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">
+								<img src="assets/img/logo-berwarna.png" alt=""class="d-inline-block align-text-top navbar-logo">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<div class="d-flex justify-content-end navbar-custom w-100 align-items-center">
+									<ul class="navbar-nav mb-2 mb-lg-0 mx-4 mt-mobile-5">
+										<li class="nav-item mx-2">
+											<div class="input-group">
+												<input type="text" class="form-control custom-form-control" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+												<span class="input-group-text border-0 bg-white" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+											</div>
+										</li>
+										<div class="d-flex justify-content-end notification-group align-items-center">
+											<li class="nav-item mx-2 notification-item">
+												<a class="nav-link badge-notif" data-badge="12" href="#">
+													<i class="fa-solid fa-bell"></i>
+												</a>
+											</li>
+											<li class="nav-item notification-item">
+												<a class="nav-link"><i class="fa-solid fa-fill-drip"></i></a>
+											</li>
+										</div>
+										
+										<li class="nav-item mx-2">
+											<a class="nav-link"></a>
+										</li>
+									</ul>
+									<div class="topbar-profile d-flex justify-content-between">
+										<div class="lh-1 mx-4">
+											<div class="text-orange">Hi, Staff Name</div>
+											<div>Have a Wonderful day</div>
+										</div>
+										<div class="img-topbar rounded" style="background-image: url('assets/img/background.jpg');">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="main-content w-100">
+				<div class="row d-flex justify-content-center p-4">
+					<div class="col-1">
+						<div class="sidebar-button bg-orange p-4 rounded-r-10px">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link text-white" href=""><i class="fa-solid fa-list"></i></a>
+									<a class="nav-link text-white" href=""><i class="fa-solid fa-star"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-11 ms-5">
+						<div class="row w-100">
+							<div class="col-lg-6">
+								<div class="text-dark bg-grey-form mb-4 w-100 my-auto py-2 rounded-5px px-2">
+									<div class="row d-flex">
+										<div class="col-1">
+											<i class="fa-solid fa-circle-exclamation"></i>	
+										</div>
+										<div class="col-10">
+											<nav aria-label="breadcrumb w-100">
+												<ol class="breadcrumb my-auto ms-3 w-100">
+												</ol>
+											</nav>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card card-login card-shadow">
+							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-25px">
+								My Sub Ordinate - Performance Appraisal - Periode 2020-2
+							</div>
+							<div class="card-body bg-grey">
+								<div class="container-fluid">
+									<div class="row py-1 d-flex justify-content-end">
+										<div class="col-md-5">
+											<form action="">
+												<div class="row mb-3">
+													<label for="inputEmail3" class="col-sm-4 col-form-label">Periode</label>
+													<div class="col-sm-8">
+														<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+															<option selected>All</option>
+															<option value="1">One</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mb-3">
+													<label for="inputEmail3" class="col-sm-4 col-form-label">Departments</label>
+													<div class="col-sm-8">
+														<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+															<option selected>All</option>
+															<option value="1">One</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mb-3">
+													<label for="inputEmail3" class="col-sm-4 col-form-label">Employee Name</label>
+													<div class="col-sm-8">
+														<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+															<option selected>All</option>
+															<option value="1">One</option>
+														</select>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-12">
+														<button class="btn bg-orange float-end text-white"><i class="fas fa-search"></i> Search</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 table-responsive">
+											<table id="example" class="table table-borderless mt-2 table-strped fs-7" style="width:100%">
+												<thead class="table-orange">
+													<tr class="text-center">
+														<th>NIK</th>
+														<th>Employee Name</th>
+														<th>Department</th>
+														<th>Title Name</th>
+														<th>Orig PA</th>
+														<th>Final PA</th>
+														<th>IDP</th>
+														<th>Coaching</th>
+														<th>Respond</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>20060049</td>
+														<td>Linda Hadi</td>
+														<td>ICT</td>
+														<td>Program Section Head</td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>2021-09-27 19:26:51</td>
+														<td>2021-09-27 19:26:51</td>
+														<td><button class="btn btn-sm bg-blue text-white fs-7">Show Approval PA</button></td>
+													</tr>
+													<tr>
+														<td>20060049</td>
+														<td>Sony Trijaya Santosa</td>
+														<td>ICT</td>
+														<td>Programmer</td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>2021-09-27 19:26:51</td>
+														<td></td>
+														<td><button class="btn btn-sm bg-blue text-white fs-7">Show Approval PA</button></td>
+													</tr>
+													<tr>
+														<td>20060049</td>
+														<td>Michael Hery Tera</td>
+														<td>ICT</td>
+														<td>Head Information & Communication Technology</td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>4.79 <button class="btn btn-sm bg-orange text-white fs-7">show</button></td>
+														<td>2021-09-27 19:26:51</td>
+														<td>2021-09-27 19:26:51</td>
+														<td><button class="btn btn-sm bg-blue text-white fs-7">Show Approval PA</button></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-white">
+		<div class="container pt-4">
+			<div class="row d-flex justify-content-between social-media">
+				<div class="col-md-6 py-2  d-flex align-items-center justify-content-start justify-content-center-mobile">
+					<p class="text-secondary fw-bold align-middle fs-5 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
+				</div>
+				<div class="col-md-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
+					<div class="d-flex align-items-center justify-content-between text-white">
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-twitter"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-facebook"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-youtube"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-linkedin-in"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid d-flex justify-content-around text-white bg-gradient-orange py-4 position-relative">
+			<div class="footer-left d-flex justify-content-around">
+				<ul class="navbar-nav">
+					<li class="nav-item text-center fw-bold">
+						Get in Touch with Us
+					</li>
+				</ul>
+				<ul class="navbar-nav px-5">
+					<li class="nav-item text-center">
+						<i class="fa-solid fa-location-dot me-2"></i>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219
+					</li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<ul class="navbar-nav">
+					<li class="nav-item text-center">
+						2022 | by ICT Universitas Ciputra
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/fontawesome/js/all.js"></script>
+	<script src="assets/plugins/datatable/jquery/jquery-3.6.0.js"></script>
+	<script src="assets/plugins/datatable/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/datatable/js//dataTables.bootstrap5.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#example').DataTable();
+		} );
+	</script>
+	</html>

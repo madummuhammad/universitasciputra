@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('#contoh1').DataTable();
+    $('#example').DataTable();
 } );
