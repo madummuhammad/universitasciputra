@@ -209,9 +209,99 @@
 															<p class="lh-1">Lakukan pengisian data riwayat pekerjaan dari yang terbaru</p>
 															<p class="lh-1">Untuk menambah riwayat pekerjaan baru, klik tombol "Add New Professional History" (Tambah Data Riwayat Pekerjaan).</p>
 															<p class="lh-1">Isi Business name, alamat, tahun masuk, tahun keluar dan data-data lainnya</p>
-															<button class="btn btn-primary">
+															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
 																+ Add New Professional History
 															</button>
+															<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																<div class="modal-dialog modal-lg modal-dialog-scorallable">
+																	<div class="modal-content rounded-10px border-0">
+																		<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0">
+																			<h5 class="modal-title" id="exampleModalLabel">Professional Info</h5>
+																		</div>
+																		<div class="modal-body">
+																			<form action="">
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Start From</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Until</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="" class="col-sm-4 col-form-label">Is Entrepreneur</label>
+																					<div class="col-sm-8">
+																						<div class="form-check form-check-inline">
+																							<input class="form-check-input custom-form-check-input" name="is_entrepreneur" type="radio" id="is_entrepreneuryes" value="option1">
+																							<label class="form-check-label" for="is_entrepreneuryes">Yes</label>
+																						</div>
+																						<div class="form-check form-check-inline">
+																							<input class="form-check-input custom-form-check-input" type="radio" name="is_entrepreneur" id="is_entrepreneurno" value="option2">
+																							<label class="form-check-label" for="is_entrepreneurno">No</label>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Name</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Address</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Phone</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Title</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Your Position in Structure Organization</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Resign Reason</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Salary</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																				<div class="row mb-3">
+																					<label for="inputEmail3" class="col-sm-4 col-form-label">Allowance</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																					</div>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="modal-footer border-0">
+																			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																			<button type="button" class="btn bg-gradient-orange text-white" data-bs-dismiss="modal">Save Temporary Changes</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 													<div class="row">

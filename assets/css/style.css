@@ -435,6 +435,8 @@
 	left: 0;
 }
 
+/*Accordion*/
+
 .accordion-button[data-badge]::after{
 	content: attr(data-badge);
 	font-size:.7em;
@@ -446,6 +448,9 @@
 	border-radius: 50%;
 	padding: .2rem .9rem;
 }
+
+/*Card*/
+
 
 input[type="file"]{
 	display: none;
