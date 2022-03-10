@@ -110,7 +110,82 @@
 													</div>
 												</div>
 												<div class="col-sm-6">
-													<button class="btn bg-dark float-end text-white"><i class="fa-solid fa-gear"></i> Maintenance</button>
+													<button class="btn bg-dark float-end text-white" data-bs-toggle="modal" data-bs-target="#maintenance"><i class="fa-solid fa-gear"></i> Maintenance</button>
+													<div class="modal fade" id="maintenance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+														<div class="modal-dialog modal-lg modal-dialog-scorallable">
+															<div class="modal-content rounded-10px border-0">
+																<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0">
+																	<h5 class="modal-title" id="exampleModalLabel">Copy Data Aditama To</h5>
+																</div>
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-12 table-responsive-sm">
+																			<table class="table table-borderless mt-2 table-striped">
+																				<thead class="bg-gradient-orange text-white">
+																					<tr class="">
+																						<th>Employee</th>
+																						<th>To</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td>Alexander Gunawan</td>
+																						<td>
+																							<div class="round">
+																								<input type="checkbox" checked id="checkbox1" />
+																								<label for="checkbox1"></label>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>Andy Januar Wicaksono</td>
+																						<td>
+																							<div class="round">
+																								<input type="checkbox" checked id="checkbox2" />
+																								<label for="checkbox2"></label>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>Daniel Pranoto</td>
+																						<td>
+																							<div class="round">
+																								<input type="checkbox" id="checkbox3" />
+																								<label for="checkbox3"></label>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>Handy Tantrisna</td>
+																						<td>
+																							<div class="round">
+																								<input type="checkbox" id="checkbox4" />
+																								<label for="checkbox4"></label>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>Linda Hadi</td>
+																						<td>
+																							<div class="round">
+																								<input type="checkbox" id="checkbox5" />
+																								<label for="checkbox5"></label>
+																							</div>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+
+																</div>
+																<div class="modal-footer border-0">
+																	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																	<button class="btn bg-orange text-white">Save Change</button>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 											<table id="example" class="table table-borderless mt-2 display" style="width: 100%;">
