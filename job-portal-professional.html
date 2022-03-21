@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
 	<title>Job Portal Professional</title>
 </head>
-<body>
+<body class="bg-grey fs-mobile-8">
 	<div class="main mb-5">
 		<nav class="navbar navbar-dark bg-gradient-orange py-3">
-			<div class="container text-white">
-				<div class="navbar-left d-flex justify-content-between">
+			<div class="container text-white fs-mobile-7">
+				<div class="navbar-left d-flex justify-content-center flex-row mb-mobile-2 w-mobile-100">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							Web : ict.uc.ac.id <span class="px-3 dash">|</span>
+							Web : ict.uc.ac.id <span class="px-3 px-mobile-1">|</span>
 						</li>
 					</ul>
 					<ul class="navbar-nav">
@@ -25,9 +25,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="navbar-right">
+				<div class="navbar-right d-flex-mobile justify-content-center w-mobile-100">
 					<ul class="navbar-nav">
-						<li class="nav-item">
+						<li class="nav-item text-center">
 							Tech Support 000-123-456-789
 						</li>
 					</ul>
@@ -37,7 +37,7 @@
 		<div class="container-fluid content">
 			<div class="header">
 				<div class="container-fluid">
-					<nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+					<nav class="navbar navbar-expand-lg navbar-light bg-grey py-4">
 						<div class="container-fluid">
 							<a class="navbar-brand" href="#">
 								<img src="assets/img/logo-berwarna.png" alt=""class="d-inline-block align-text-top navbar-logo">
@@ -77,362 +77,387 @@
 			<div class="main-content w-100">
 				<div class="row d-flex justify-content-center p-4">
 					<div class="col-md-12">
-						<div class="card card-login card-shadow p-0">
-							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-25px">
+						<div class="card card-login card-shadow p-0 rounded-10px">
+							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-10px">
 								My Profile
 							</div>
 							<div class="card-body bg-grey">
-								<div class="container-fluid">
-									<div class="row bg-gradient-orange rounded-10px py-1 mb-5">
-										<div class="col-12 d-flex align-items-center">
-											<p class="text-white d-flex align-items-center my-auto align-items-center-mobile d-flex-mobile text-justify"><span class="fs-3 me-2">! </span>To improve your chances of employers shortlisting you, pleas always update :<span class="text-decoration-underline ms-1">Professional Education</span></p>
-										</div>
+								<div class="row bg-gradient-orange py-1 mb-5">
+									<div class="col-12 d-flex align-items-center">
+										<p class="text-white d-flex align-items-center my-auto align-items-center-mobile d-flex-mobile text-justify"><span class="fs-3 me-2">! </span>To improve your chances of employers shortlisting you, pleas always update :<span class="text-decoration-underline ms-1">Professional Education</span></p>
 									</div>
-									<div class="row">
-										<div class="col-sm-3 sidebar">
-											<div class="card border-0">
-												<img src="assets/img/face/profile.png" class="card-img-top" alt="...">
-												<div class="list-group bg-orange px-4 py-4" id="list-tab" role="tablist">
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-home-list" data-bs-toggle="list" href="#personal" role="tab" aria-controls="list-home"><i class="fa-regular fa-user icon"></i> Personal</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="fa-regular fa-circle-user icon"></i> Social Media</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="fa-regular fa-id-card icon"></i> Personal Detail</a>
-													<a class="list-group-item list-group-item-action sidebar-item active" id="list-settings-list" data-bs-toggle="list" href="#professional" role="tab" aria-controls="list-settings"><i class="fa-solid fa-briefcase icon"></i> Professional</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-graduation-cap icon"></i> Education</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-users icon"></i> Family</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-star icon"></i> Ownership</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-book icon"></i> Course</a>
-													<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-building-columns icon"></i> Organization</a>
-												</div>
+								</div>
+								<div class="row d-none-pc d-block-mobile">
+									<div class="col-12">
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1 active" data-toggle="btn_sidebar" data-target="#list-home">Personal</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-hoe">Social Media</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#lecturer">Personal Detail</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-profile">Professional</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-settings">Educaiton</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-home">Family</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-home">Ownership</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-home">Course</button>
+										<button class="btn btn-sidebar text-white fs-mobile-8 mb-1" data-toggle="btn_sidebar" data-target="#list-home">Organization</button>
+									</div>
+									<div class="col-12">
+										<div class="row d-flex align-items-end">
+											<div class="col-5">
+												<img src="assets/img/face/profile.png" class="img-fluid" alt="...">
 											</div>
 										</div>
-										<div class="col-sm-9">
-											<div class="tab-content" id="nav-tabContent">
-												<div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="list-home-list">
-													<form action="">
-														<div class="row">
-															<div class="col-sm-8">
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Name</label>
-																	<div class="col-sm-8">
-																		<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Personal Email</label>
-																	<div class="col-sm-8">
-																		<input type="email" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Religion</label>
-																	<div class="col-sm-8">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected></option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Gender</label>
-																	<div class="col-sm-8">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected></option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Birthday</label>
-																	<div class="col-sm-8">
-																		<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Birth City</label>
-																	<div class="col-sm-8">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected></option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Address</label>
-																	<div class="col-sm-8">
-																		<textarea class="form-control custom-form-control bg-grey-form form-focus-bottom rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">City</label>
-																	<div class="col-sm-8">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected></option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Postal Code</label>
-																	<div class="col-sm-8">
-																		<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Telephone</label>
-																	<div class="col-sm-8">
-																		<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">Mobile</label>
-																	<div class="col-sm-8">
-																		<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																	</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3 sidebar d-none-mobile">
+										<div class="card border-0">
+											<img src="assets/img/face/profile.png" class="card-img-top" alt="...">
+											<div class="list-group bg-orange px-4 py-4" id="list-tab" role="tablist">
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-home-list" data-bs-toggle="list" href="#personal" role="tab" aria-controls="list-home"><i class="fa-regular fa-user icon"></i> Personal</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="fa-regular fa-circle-user icon"></i> Social Media</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="fa-regular fa-id-card icon"></i> Personal Detail</a>
+												<a class="list-group-item list-group-item-action sidebar-item active" id="list-settings-list" data-bs-toggle="list" href="#professional" role="tab" aria-controls="list-settings"><i class="fa-solid fa-briefcase icon"></i> Professional</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-graduation-cap icon"></i> Education</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-users icon"></i> Family</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-star icon"></i> Ownership</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-book icon"></i> Course</a>
+												<a class="list-group-item list-group-item-action sidebar-item" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="fa-solid fa-building-columns icon"></i> Organization</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-9">
+										<div class="tab-content" id="nav-tabContent">
+											<div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="list-home-list">
+												<form action="">
+													<div class="row">
+														<div class="col-8">
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Name</label>
+																<div class="col-8">
+																	<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
 																</div>
 															</div>
-															<div class="col-sm-4">
-																<a href="" class="btn bg-gradient-orange text-white w-100"><i class="fa-solid fa-download"></i> Supported Document (CV)</a>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Personal Email</label>
+																<div class="col-8">
+																	<input type="email" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Religion</label>
+																<div class="col-8">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																		<option selected></option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Gender</label>
+																<div class="col-8">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																		<option selected></option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Birthday</label>
+																<div class="col-8">
+																	<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Birth City</label>
+																<div class="col-8">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																		<option selected></option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Address</label>
+																<div class="col-8">
+																	<textarea class="form-control custom-form-control bg-grey-form form-focus-bottom rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">City</label>
+																<div class="col-8">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
+																		<option selected></option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Postal Code</label>
+																<div class="col-8">
+																	<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Telephone</label>
+																<div class="col-8">
+																	<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																</div>
+															</div>
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-4 col-form-label">Mobile</label>
+																<div class="col-8">
+																	<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+																</div>
 															</div>
 														</div>
-														<div class="row mt-5">
-															<div class="col">
-																<button class="btn bg-gradient-orange text-white">Save Change</button>
-															</div>
+														<div class="col-sm-4">
+															<a href="" class="btn bg-gradient-orange text-white w-100"><i class="fa-solid fa-download"></i> Supported Document (CV)</a>
 														</div>
-													</form>
-												</div>
-												<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
-												<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
-												<div class="tab-pane fade show active" id="professional" role="tabpanel" aria-labelledby="list-settings-list">
-													<div class="row mb-5">
-														<div class="col-md-12">
-															<p class="lh-1">Lakukan pengisian data riwayat pekerjaan dari yang terbaru</p>
-															<p class="lh-1">Untuk menambah riwayat pekerjaan baru, klik tombol "Add New Professional History" (Tambah Data Riwayat Pekerjaan).</p>
-															<p class="lh-1">Isi Business name, alamat, tahun masuk, tahun keluar dan data-data lainnya</p>
-															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
-																+ Add New Professional History
-															</button>
-															<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-																<div class="modal-dialog modal-lg modal-dialog-scorallable">
-																	<div class="modal-content rounded-10px border-0">
-																		<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0">
-																			<h5 class="modal-title" id="exampleModalLabel">Professional Info</h5>
-																		</div>
-																		<div class="modal-body">
-																			<form action="">
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Start From</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
+													</div>
+													<div class="row mt-5">
+														<div class="col">
+															<button class="btn bg-gradient-orange text-white">Save Change</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
+											<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+											<div class="tab-pane fade show active" id="professional" role="tabpanel" aria-labelledby="list-settings-list">
+												<div class="row mb-5 mt-mobile-3">
+													<div class="col-md-12">
+														<p class="lh-1">Lakukan pengisian data riwayat pekerjaan dari yang terbaru</p>
+														<p class="lh-1">Untuk menambah riwayat pekerjaan baru, klik tombol "Add New Professional History" (Tambah Data Riwayat Pekerjaan).</p>
+														<p class="lh-1">Isi Business name, alamat, tahun masuk, tahun keluar dan data-data lainnya</p>
+														<button class="btn btn-primary fs-mobile-8" data-bs-toggle="modal" data-bs-target="#add">
+															+ Add New Professional History
+														</button>
+														<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scorallable">
+																<div class="modal-content rounded-10px border-0">
+																	<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0 fs">
+																		<h5 class="modal-title fs-mobile-7" id="exampleModalLabel">Professional Info</h5>
+																	</div>
+																	<div class="modal-body">
+																		<form action="">
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Start From</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
+																				</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Until</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
+																				</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="" class="col-4 col-form-label">Is Entrepreneur</label>
+																				<div class="col-8">
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input custom-form-check-input" name="is_entrepreneur" type="radio" id="is_entrepreneuryes" value="option1">
+																						<label class="form-check-label" for="is_entrepreneuryes">Yes</label>
+																					</div>
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input custom-form-check-input" type="radio" name="is_entrepreneur" id="is_entrepreneurno" value="option2">
+																						<label class="form-check-label" for="is_entrepreneurno">No</label>
 																					</div>
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Until</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Business Name</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="" class="col-sm-4 col-form-label">Is Entrepreneur</label>
-																					<div class="col-sm-8">
-																						<div class="form-check form-check-inline">
-																							<input class="form-check-input custom-form-check-input" name="is_entrepreneur" type="radio" id="is_entrepreneuryes" value="option1">
-																							<label class="form-check-label" for="is_entrepreneuryes">Yes</label>
-																						</div>
-																						<div class="form-check form-check-inline">
-																							<input class="form-check-input custom-form-check-input" type="radio" name="is_entrepreneur" id="is_entrepreneurno" value="option2">
-																							<label class="form-check-label" for="is_entrepreneurno">No</label>
-																						</div>
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Business Address</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Name</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Business Phone</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Address</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Business Title</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Phone</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Your Position in Structure Organization</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Business Title</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Resign Reason</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Your Position in Structure Organization</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Salary</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Resign Reason</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
+																			</div>
+																			<div class="row mb-1">
+																				<label for="inputEmail3" class="col-4 col-form-label">Allowance</label>
+																				<div class="col-8">
+																					<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" id="inputEmail3">
 																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Salary</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
-																				</div>
-																				<div class="row mb-3">
-																					<label for="inputEmail3" class="col-sm-4 col-form-label">Allowance</label>
-																					<div class="col-sm-8">
-																						<input type="text" class="form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" id="inputEmail3">
-																					</div>
-																				</div>
-																			</form>
-																		</div>
-																		<div class="modal-footer border-0">
-																			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-																			<button type="button" class="btn bg-gradient-orange text-white" data-bs-dismiss="modal">Save Temporary Changes</button>
-																		</div>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="modal-footer border-0">
+																		<button type="button" class="btn btn-secondary fs-mobile-8" data-bs-dismiss="modal">Close</button>
+																		<button type="button" class="btn bg-gradient-orange text-white fs-mobile-8" data-bs-dismiss="modal">Save Temporary Changes</button>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-													<div class="row">
-														<div class="col-md-12 table-responsive">
-															<table class="table table-borderless">
-																<thead class="table-orange">
+												</div>
+												<div class="row">
+													<div class="col-md-12 table-responsive">
+														<table class="table table-borderless w-vh-mobile-100">
+															<thead class="table-orange">
+																<tr>
+																	<th>No</th>
+																	<th>Start</th>
+																	<th>Until</th>
+																	<th>Business</th>
+																	<th>Title</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<div class="tr-table">
 																	<tr>
-																		<th>No</th>
-																		<th>Start</th>
-																		<th>Until</th>
-																		<th>Business</th>
-																		<th>Title</th>
-																		<th>Action</th>
+																		<td rowspan="3">1</td>
+																		<td>2020-06-03</td>
+																		<td>2021-06-03</td>
+																		<td>
+																			<p><span class="fw-bold">Business Name</span>: Warung Kelontong</p>
+																			<p><span class="fw-bold">Business Address</span>: Pahlawan 1</p>
+																			<p><span class="fw-bold">Business Phone</span>: 0813456789</p>
+																		</td>
+																		<td>Business Owner</td>
+																		<td>
+																			<button class="btn bg-green text-white rounded-0 fs-mobile-8"><i class="fas fa-edit"></i></button>
+																			<button class="btn btn-danger text-white rounded-0 fs-mobile-8"><i class="fa-regular fa-trash-can"></i></button>
+																		</td>
 																	</tr>
-																</thead>
-																<tbody>
-																	<div class="tr-table">
-																		<tr>
-																			<td rowspan="3">1</td>
-																			<td>2020-06-03</td>
-																			<td>2021-06-03</td>
-																			<td>
-																				<p><span class="fw-bold">Business Name</span>: Warung Kelontong</p>
-																				<p><span class="fw-bold">Business Address</span>: Pahlawan 1</p>
-																				<p><span class="fw-bold">Business Phone</span>: 0813456789</p>
-																			</td>
-																			<td>Business Owner</td>
-																			<td>
-																				<button class="btn bg-green text-white rounded-0"><i class="fas fa-edit"></i></button>
-																				<button class="btn btn-danger text-white rounded-0"><i class="fa-regular fa-trash-can"></i></button>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td colspan="2">
-																				Job Description
-																			</td>
-																			<td colspan="3" class="pe-4">
-																				<button class="btn btn-primary text-center float-end px-4">Add Job Description</button>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td colspan="5">
-																				<table class="table table-borderless">
-																					<thead class="table-orange">
-																						<tr>
-																							<th>Portion (%0)</th>
-																							<th>Item</th>
-																							<th>Data</th>
-																							<th>People</th>
-																							<th>Action</th>
-																						</tr>
-																					</thead>
-																					<tbody class="bg-grey-form">
-																						<tr>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																						</tr>
-																					</tbody>
-																				</table>
-																			</td>
-																		</tr>
-																	</div>
-																</tbody>
-															</table>
-															<table class="table table-borderless">
-																<thead class="table-orange">
 																	<tr>
-																		<th>No</th>
-																		<th>Start</th>
-																		<th>Until</th>
-																		<th>Business</th>
-																		<th>Title</th>
-																		<th>Action</th>
+																		<td colspan="2">
+																			Job Description
+																		</td>
+																		<td colspan="3" class="pe-4">
+																			<button class="btn btn-primary text-center float-end px-4 fs-mobile-8">Add Job Description</button>
+																		</td>
 																	</tr>
-																</thead>
-																<tbody>
-																	<div class="tr-table">
-																		<tr>
-																			<td rowspan="3">2</td>
-																			<td>2020-06-03</td>
-																			<td>2021-06-03</td>
-																			<td>
-																				<p><span class="fw-bold">Business Name</span>: Warung Kelontong</p>
-																				<p><span class="fw-bold">Business Address</span>: Pahlawan 1</p>
-																				<p><span class="fw-bold">Business Phone</span>: 0813456789</p>
-																			</td>
-																			<td>Business Owner</td>
-																			<td>
-																				<button class="btn bg-green text-white rounded-0"><i class="fas fa-edit"></i></button>
-																				<button class="btn btn-danger text-white rounded-0"><i class="fa-regular fa-trash-can"></i></button>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td colspan="2">
-																				Job Description
-																			</td>
-																			<td colspan="3" class="pe-4">
-																				<button class="btn btn-primary text-center float-end px-4">Add Job Description</button>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td colspan="5">
-																				<table class="table table-borderless">
-																					<thead class="table-orange">
-																						<tr>
-																							<th>Portion (%0)</th>
-																							<th>Item</th>
-																							<th>Data</th>
-																							<th>People</th>
-																							<th>Action</th>
-																						</tr>
-																					</thead>
-																					<tbody class="bg-grey-form">
-																						<tr>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																							<td></td>
-																						</tr>
-																					</tbody>
-																				</table>
-																			</td>
-																		</tr>
-																	</div>
-																</tbody>
-															</table>
-														</div>
+																	<tr>
+																		<td colspan="5">
+																			<table class="table table-borderless">
+																				<thead class="table-orange">
+																					<tr>
+																						<th>Portion (%0)</th>
+																						<th>Item</th>
+																						<th>Data</th>
+																						<th>People</th>
+																						<th>Action</th>
+																					</tr>
+																				</thead>
+																				<tbody class="bg-grey-form">
+																					<tr>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																</div>
+															</tbody>
+														</table>
+													</div>
+													<div class="col-md-12 table-responsive">
+														<table class="table table-borderless w-vh-mobile-100">
+															<thead class="table-orange">
+																<tr>
+																	<th>No</th>
+																	<th>Start</th>
+																	<th>Until</th>
+																	<th>Business</th>
+																	<th>Title</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<div class="tr-table">
+																	<tr>
+																		<td rowspan="3">2</td>
+																		<td>2020-06-03</td>
+																		<td>2021-06-03</td>
+																		<td>
+																			<p><span class="fw-bold">Business Name</span>: Warung Kelontong</p>
+																			<p><span class="fw-bold">Business Address</span>: Pahlawan 1</p>
+																			<p><span class="fw-bold">Business Phone</span>: 0813456789</p>
+																		</td>
+																		<td>Business Owner</td>
+																		<td>
+																			<button class="btn bg-green text-white rounded-0 fs-mobile-8"><i class="fas fa-edit"></i></button>
+																			<button class="btn btn-danger text-white rounded-0 fs-mobile-8"><i class="fa-regular fa-trash-can"></i></button>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2">
+																			Job Description
+																		</td>
+																		<td colspan="3" class="pe-4">
+																			<button class="btn btn-primary text-center float-end px-4 fs-mobile-8">Add Job Description</button>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="5">
+																			<table class="table table-borderless">
+																				<thead class="table-orange">
+																					<tr>
+																						<th>Portion (%0)</th>
+																						<th>Item</th>
+																						<th>Data</th>
+																						<th>People</th>
+																						<th>Action</th>
+																					</tr>
+																				</thead>
+																				<tbody class="bg-grey-form">
+																					<tr>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																						<td></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																</div>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div class="row mt-5">
+													<div class="col d-flex justify-content-end">
+														<button class="btn bg-gradient-orange text-white fs-mobile-8">Save Change</button>
 													</div>
 												</div>
 											</div>
@@ -446,30 +471,52 @@
 			</div>
 		</div>
 	</div>
-	<footer class="mt-5">
-		<div class="container-fluid d-flex justify-content-around text-white bg-gradient-orange py-4 position-relative">
-			<div class="footer-left d-flex justify-content-around">
-				<ul class="navbar-nav">
-					<li class="nav-item text-center fw-bold">
-						Get in Touch with Us
-					</li>
-				</ul>
-				<ul class="navbar-nav px-5">
-					<li class="nav-item text-center">
-						<i class="fa-solid fa-location-dot me-2"></i>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219
-					</li>
-				</ul>
+	<footer class="bg-white">
+		<div class="container fs-7 fs-mobile-8 pt-3">
+			<div class="row d-flex justify-content-between social-media">
+				<div class="col-6 py-0  d-flex align-items-center justify-content-start justify-content-center-mobile">
+					<p class="text-secondary fw-bold align-middle fs-6 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
+				</div>
+				<div class="col-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
+					<div class="d-flex align-items-center justify-content-between text-white">
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-twitter"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-facebook"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-youtube"></i></p>
+						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-linkedin-in"></i></p>
+					</div>
+				</div>
 			</div>
-			<div class="footer-right">
-				<ul class="navbar-nav">
-					<li class="nav-item text-center">
-						2022 | by ICT Universitas Ciputra
-					</li>
-				</ul>
+		</div>
+		<div class="container-fluid text-white bg-gradient-orange py-4 py-mobile-1 px-0 position-relative">
+			<div class="row d-flex justify-content-between mx-5 mx-mobile-0 fs-7">
+				<div class="footer-left col-12 col-lg-3 mb-mobile-2">
+					<ul class="navbar-nav">
+						<li class="nav-item fw-bold fs-6">
+							Get in Touch with Us
+						</li>
+					</ul>
+				</div>
+				<div class="footer-right col-12 col-lg-9">
+					<div class="d-flex justify-content-between">
+						<ul class="navbar-nav col-lg-8 col-6">
+							<li class="nav-item d-flex align-items-start">
+								<i class="fa-solid fa-location-dot me-1 py-1"></i>
+								<p>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219</p>
+							</li>
+						</ul>
+						<ul class="navbar-nav col-lg-4 col-6 text-end text-start-mobile ps-3">
+							<li class="nav-item">
+								2022 | by ICT Universitas Ciputra
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
 </body>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/fontawesome/js/all.js"></script>
+<script src="assets/plugins/datatable/jquery/jquery-3.6.0.js"></script>
+<script src="assets/js/script.js"></script>
 </html>

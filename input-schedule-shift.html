@@ -14,35 +14,32 @@
 		<div class="container-fluid content">
 			<div class="header">
 				<div class="container-fluid">
-					<nav class="navbar navbar-expand-lg navbar-light bg-grey py-4">
-						<div class="container-fluid">
-							<a class="navbar-brand" href="#">
-								<img src="assets/img/logo-berwarna.png" alt=""class="d-inline-block align-text-top navbar-logo">
-							</a>
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<nav class="d-flex justify-content-between my-2 position-relative">
+						<a class="" href="#">
+							<img src="assets/img/logo-berwarna.png" alt="" class="align-text-top vw-mobile-50 vw-20">
+						</a>
+						<ul class="list-unstyled d-flex justify-content-center align-items-center">
+							<li class="">
+								<div class="input-group">
+									<input type="text" class="form-control custom-form-control navbar-search show" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+									<span class="input-group-text border-0 bg-white bg-transparent-mobile navbar-search-button" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link notification badge-notif text-dark" data-badge="12" href="#">
+									<i class="fa-solid fa-bell"></i>
+								</a>
+							</li>
+							<li class="nav-item d-none-mobile">
+								<a class="nav-link text-dark"><i class="fa-solid fa-fill-drip"></i></a>
+							</li>
+							<li class="nav-item text-white">
+								<button class="navbar-toggler-custom" type="button">
+									<i class="fa-solid fa-bars"></i>
+								</button>
+							</li>
+							<div class="navbar-profile collapse show">
 								<div class="d-flex justify-content-end navbar-custom w-100 align-items-center">
-									<ul class="navbar-nav mb-2 mb-lg-0 mx-4">
-										<li class="nav-item mx-2">
-											<div class="input-group">
-												<input type="text" class="form-control custom-form-control" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-												<span class="input-group-text border-0 bg-white" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
-											</div>
-										</li>
-										<li class="nav-item mx-2">
-											<a class="nav-link notification badge-notif" data-badge="12" href="#">
-												<i class="fa-solid fa-bell"></i>
-											</a>
-										</li>
-										<li class="nav-item mx-2">
-											<a class="nav-link"><i class="fa-solid fa-fill-drip"></i></a>
-										</li>
-										<li class="nav-item mx-2">
-											<a class="nav-link"></a>
-										</li>
-									</ul>
 									<div class="topbar-profile d-flex justify-content-between">
 										<div class="lh-1 mx-4">
 											<div class="text-orange">Hi, Staff Name</div>
@@ -54,13 +51,13 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</ul>
 					</nav>
 				</div>
 			</div>
-			<div class="main-content w-100">
+			<div class="main-content w-100 fs-mobile-8">
 				<div class="row d-flex justify-content-center p-4">
-					<div class="col-1">
+					<div class="col-1 d-none-mobile">
 						<div class="sidebar-button bg-orange p-4 rounded-r-10px">
 							<ul class="navbar-nav">
 								<li class="nav-item">
@@ -70,716 +67,571 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-11 ms-5">
-						<div class="row w-100">
-							<div class="col-lg-6">
-								<div class="text-dark bg-grey-form mb-4 w-100 my-auto py-2 rounded-5px px-2">
-									<div class="row d-flex">
-										<div class="col-1">
-											<i class="fa-solid fa-circle-exclamation"></i>	
-										</div>
-										<div class="col-10 fs-7">
-											<nav aria-label="breadcrumb w-100">
-												<ol class="breadcrumb my-auto ms-3 w-100">
-													<li class="breadcrumb-item"><a href="">Transaction</a></li>
-													<li class="breadcrumb-item"><a href="">HCIS</a></li>
-													<li class="breadcrumb-item"><a href="">Schedule</a></li>
-													<li class="breadcrumb-item active">Schedule to Employee (Monthly)</li>
-												</ol>
-											</nav>	
-										</div>
+					<div class="col-md-11 ms-mobile-0">
+						<div class="col-lg-6 bg-grey-form mb-4">
+							<div class="text-dark w-100 my-auto py-2 rounded-5px px-2">
+								<div class="row d-flex align-items-center">
+									<div class="col-01 col-md-1">
+										<i class="fa-solid fa-circle-exclamation"></i>	
+									</div>
+									<div class="col-11 col-md-10 fs-7 fs-mobile-8">
+										<nav aria-label="breadcrumb w-100">
+											<ol class="breadcrumb my-auto w-100">
+												<li class="breadcrumb-item"><a href="">Master</a></li>
+												<li class="breadcrumb-item"><a href="">HCIS</a></li>
+												<li class="breadcrumb-item"><a href="">Schedule</a></li>
+												<li class="breadcrumb-item active">Schedule to Employee (Monthly)</li>
+											</ol>
+										</nav>	
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="card card-login card-shadow rounded-25px">
-							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-25px">
+						<div class="card card-login card-shadow rounded-10px">
+							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-10px">
 								Employee Monthly Schedule
 							</div>
 							<div class="card-body bg-grey">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="tab-content" id="nav-tabContent">
-												<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-													<form action="">
-														<div class="row">
-															<div class="col-md-6">
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-3 col-form-label">Project</label>
-																	<div class="col-sm-9">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected>Universitas Ciputra Surabaya</option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																</div>
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-3 col-form-label">Month</label>
-																	<div class="col-sm-6">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected>September 2021</option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
-																	<div class="col-sm-3">
-																		<button class="btn bg-orange text-white w-100">Show Data</button>
-																	</div>
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="row mb-3">
-																	<label for="inputEmail3" class="col-sm-4 col-form-label">NIK/Name</label>
-																	<div class="col-sm-8">
-																		<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0" aria-label="Default select example">
-																			<option selected>20100080-Cicilia Larasati Rembulan</option>
-																			<option value="1">One</option>
-																		</select>
-																	</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="tab-content" id="nav-tabContent">
+											<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+												<form action="">
+													<div class="row">
+														<div class="col-md-6">
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-3 col-form-label">Project</label>
+																<div class="col-9">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" aria-label="Default select example">
+																		<option selected>Universitas Ciputra Surabaya</option>
+																		<option value="1">One</option>
+																	</select>
 																</div>
 															</div>
 														</div>
-													</form>
-												</div>
+														<div class="col-md-6">
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-3 col-form-label">NIK/Name</label>
+																<div class="col-9">
+																	<select class="form-select form-control custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" aria-label="Default select example">
+																		<option selected>20100080-Cicilia Larasati Rembulan</option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="row mb-3">
+																<label for="inputEmail3" class="col-3 col-form-label">Month</label>
+																<div class="col-6">
+																	<select class="form-select form-control  custom-form-control bg-grey-form form-focus-bottom rounded-0 fs-mobile-8" aria-label="Default select example">
+																		<option selected>September 2021</option>
+																		<option value="1">One</option>
+																	</select>
+																</div>
+																<div class="col-3 px-mobile-0">
+																	<button class="btn bg-orange text-white fs-mobile-8 px-mobile-1">Show Data</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
 											</div>
-											<div class="notes">
-												<p class="fs-6 fw-bold">September-2021-20100080-Cicilia Larasati Rembulan</p>
-											</div>
+										</div>
+										<div class="notes">
+											<p class="fs-6 fw-bold">September-2021-20100080-Cicilia Larasati Rembulan</p>
 										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="row row-cols-1 row-cols-md-7 g-1 mb-2">
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Sunday
-													</div>
-													<div class="card-body">
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Monday
-													</div>
-													<div class="card-body">
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Tuesday
-													</div>
-													<div class="card-body">
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Wednesday
-													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">1</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
-																	</div>
-																</div>
-															</div>
+								<div class="overflow-scroll-mobile">
+									<div class="row schedule">
+										<div class="col-sm-12">
+											<div class="row row-cols-7 row-cols-md-7 g-1 mb-2">
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Sunday
 														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
-																	</div>
-																</div>
-															</div>
+														<div class="card-body">
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Thursday
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Monday
+														</div>
+														<div class="card-body">
+														</div>
 													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">2</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Tuesday
+														</div>
+														<div class="card-body">
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Wednesday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">1</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Friday
-													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">3</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Thursday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">2</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Saturday
-													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">4</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="row row-cols-1 row-cols-md-7 g-1 mb-2">
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Sunday
-													</div>
-													<div class="card-body">
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Friday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">3</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Monday
-													</div>
-													<div class="card-body">
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Tuesday
-													</div>
-													<div class="card-body">
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Wednesday
-													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">1</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Saturday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">4</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -787,347 +639,492 @@
 													</div>
 												</div>
 											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Thursday
+											<div class="row row-cols-1 row-cols-md-7 g-1 mb-2">
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Sunday
+														</div>
+														<div class="card-body">
+														</div>
 													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">2</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Monday
+														</div>
+														<div class="card-body">
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Tuesday
+														</div>
+														<div class="card-body">
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Wednesday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">8</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Friday
-													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">3</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Thursday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">9</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col">
-												<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
-													<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
-														Saturday
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Friday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">10</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</div>
-													<div class="card-body px-1">
-														<h5 class="card-title">4</h5>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">73143</label>
+												</div>
+												<div class="col">
+													<div class="card h-100 rounded-trl-10px shadow border-0 rounded-10px">
+														<div class="card-header text-center rounded-trl-10px bg-gradient-orange text-white border-0">
+															Saturday
+														</div>
+														<div class="card-body px-1">
+															<h5 class="card-title">11</h5>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">73143</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">73163</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">73163</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">918</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">918</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">9143</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">7316</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">83173</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">9143</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">75153</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">7316</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">7312</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">817</label>
-																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">93183</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">83173</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">1019</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">75153</label>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
-																		<label class="form-check-label" for="inlineCheckbox2">103193</label>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">7312</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-sm-12 fs-7">
-															<div class="row">
-																<div class="col-6">
-																	<div class="form-check form-check-inline">
-																		<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
-																		<label class="form-check-label" for="inlineCheckbox1">Libur</label>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">817</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">93183</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">1019</label>
+																		</div>
+																	</div>
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" type="checkbox" name="gender" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox2">103193</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12 fs-7">
+																<div class="row">
+																	<div class="col-6">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input custom-form-check-input" name="gender" type="checkbox" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label fs-mobile-8" for="inlineCheckbox1">Libur</label>
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -1146,12 +1143,12 @@
 		</div>
 	</div>
 	<footer class="bg-white">
-		<div class="container pt-4">
+		<div class="container fs-7 fs-mobile-8 pt-3">
 			<div class="row d-flex justify-content-between social-media">
-				<div class="col-md-6 py-2  d-flex align-items-center justify-content-start justify-content-center-mobile">
-					<p class="text-secondary fw-bold align-middle fs-5 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
+				<div class="col-6 py-0  d-flex align-items-center justify-content-start justify-content-center-mobile">
+					<p class="text-secondary fw-bold align-middle fs-6 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
 				</div>
-				<div class="col-md-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
+				<div class="col-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
 					<div class="d-flex align-items-center justify-content-between text-white">
 						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-twitter"></i></p>
 						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-facebook"></i></p>
@@ -1161,30 +1158,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid d-flex justify-content-around text-white bg-gradient-orange py-4 position-relative">
-			<div class="footer-left d-flex justify-content-around">
-				<ul class="navbar-nav">
-					<li class="nav-item text-center fw-bold">
-						Get in Touch with Us
-					</li>
-				</ul>
-				<ul class="navbar-nav px-5">
-					<li class="nav-item text-center">
-						<i class="fa-solid fa-location-dot me-2"></i>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219
-					</li>
-				</ul>
-			</div>
-			<div class="footer-right">
-				<ul class="navbar-nav">
-					<li class="nav-item text-center">
-						2022 | by ICT Universitas Ciputra
-					</li>
-				</ul>
+		<div class="container-fluid text-white bg-gradient-orange py-4 py-mobile-1 px-0 position-relative">
+			<div class="row d-flex justify-content-between mx-5 mx-mobile-0 fs-7">
+				<div class="footer-left col-12 col-lg-3 mb-mobile-2">
+					<ul class="navbar-nav">
+						<li class="nav-item fw-bold fs-6">
+							Get in Touch with Us
+						</li>
+					</ul>
+				</div>
+				<div class="footer-right col-12 col-lg-9">
+					<div class="d-flex justify-content-between">
+						<ul class="navbar-nav col-lg-8 col-6">
+							<li class="nav-item d-flex align-items-start">
+								<i class="fa-solid fa-location-dot me-1 py-1"></i>
+								<p>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219</p>
+							</li>
+						</ul>
+						<ul class="navbar-nav col-lg-4 col-6 text-end text-start-mobile ps-3">
+							<li class="nav-item">
+								2022 | by ICT Universitas Ciputra
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
 </body>
 <script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/fontawesome/js/all.js"></script>
+<script src="assets/plugins/datatable/jquery/jquery-3.6.0.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
