@@ -11649,7 +11649,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+				"sInfo": "Showing _START_ to _END_ of _TOTAL_",
 		
 		
 				/**
@@ -11890,7 +11890,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sSearch": "Search:",
+				"sSearch": "",
 		
 		
 				/**
@@ -11901,7 +11901,7 @@
 				 *  @dtopt Language
 				 *  @name DataTable.defaults.language.searchPlaceholder
 				 */
-				"sSearchPlaceholder": "",
+				"sSearchPlaceholder": "Search Content",
 		
 		
 				/**

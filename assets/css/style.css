@@ -2,6 +2,7 @@
 *{
 	font-family: 'Open Sans', sans-serif;
 }
+
 .content{
 	position: relative;
 
@@ -63,6 +64,10 @@
 
 .bg-blue{
 	background-color: #58B6FE;
+}
+
+.bg-blue-2{
+	background-color: #53B7FF;
 }
 
 .bg-red{
@@ -251,6 +256,10 @@
 
 .w-5vw{
 	width: 5vw;
+}
+
+.w-6vw{
+	width: 5rem;
 }
 
 .w-8vw{
@@ -509,6 +518,10 @@
 	width: 100%;
 }
 
+.img-category{
+	height: 14vh;
+}
+
 .google-logo{
 	width: 1rem;
 }
@@ -538,11 +551,18 @@
 .main-login{
 	position: relative;
 	height: 80vh;
-	padding-top: 8vh;
+	padding-top: 4vh;
 }
 
 .main-register{
 	/*position: relative;*/
+}
+
+.kotak{
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100%;
 }
 
 .body-login{
@@ -654,17 +674,65 @@
 	padding: .2rem .9rem;
 }
 
+.data-badge{
+	background-color:#F59122;
+	width: 20px;
+	height: 20px;
+	font-size:.7em;
+	color:white;
+	text-align:center;
+	border-radius: 100%;
+	margin-left: 0.2rem;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: -21px;
+}
+
+.data-badge span{
+	position: absolute;
+	align-items: center;
+	padding: auto;
+	right: 0;
+	left: 0;
+}
+
+.badge-img{
+	background-color:#F59122;
+	width: 1.4rem;
+	height: 1.4rem;
+	font-size:.7em;
+	color:white;
+	text-align:center;
+	border-radius: 100%;
+	/*padding: 5px 9px;*/
+	margin-left: 0.2rem;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+
+.badge-img span{
+	position: absolute;
+	align-items: center;
+	padding: auto;
+	right: 0;
+	left: 0;
+}
+
+
 .badge-after[data-badge]::after{
-	content: attr(data-badge);
+	content:attr(data-badge);
 	font-size:.7em;
 	background-color:#F59122;
 	color:white;
-/*	width:17px;
-	height:17px;*/
 	text-align:center;
 	border-radius: 100%;
-	padding: .2rem .4rem;
+	padding: 5px 8px;
 	align-items: center;
+	margin-left: 0.2rem;
 }
 
 .badge-after-square[data-badge]::after{
@@ -721,6 +789,14 @@ caret-color:transparent;
 	font-style: normal !important;
 }
 
+.triangle{
+	height: 30px;
+}
+
+.triangle-sm{
+	height: 27px;
+}
+
 .triangle-left-green::before{
 	border-right: solid 18px rgb(87,218,141);
 }
@@ -748,7 +824,7 @@ caret-color:transparent;
 	position: absolute;
 	height: 100%;
 	z-index: 1;
-	right: 100%;
+	right: 98%;
 	top: 0;
 	bottom: 0;
 	border-top: solid 16px transparent;
@@ -781,19 +857,21 @@ caret-color:transparent;
 
 .paginate_button a{
 	color: black !important;
-	background-color: #F7F7F7 !important;
+	background-color: red !important;
 	border: none;
+	border-radius: 20%;
 }
 
 .paginate_button.active a{
 	color: black !important;
 	text-decoration: underline;
-	background-color: #F7F7F7 !important;
+	background-color: #F0F0F0 !important;
 }
 
 .arrow-before:not(.collapsed)::before {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 6' fill='%233E3E3E'%3e%3cpath fill-rule='evenodd' d='M7.5 6L14.8612 0.75H0.138784L7.5 6Z'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 1' fill='%233E3E3E'%3e%3cpath fill-rule='evenodd' d='M1.5 1L2.79904 0.25H0.200962L1.5 1Z'/%3e%3c/svg%3e");
 	transform: rotate(-180deg);
+
 }
 .arrow-before::before {
 	flex-shrink: 0;
@@ -801,13 +879,30 @@ caret-color:transparent;
 	height: 1rem;
 	/*margin-left: auto;*/
 	content: "";
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 6' fill='%233E3E3E'%3e%3cpath fill-rule='evenodd' d='M7.5 6L14.8612 0.75H0.138784L7.5 6Z'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 1' fill='%233E3E3E'%3e%3cpath fill-rule='evenodd' d='M1.5 1L2.79904 0.25H0.200962L1.5 1Z'/%3e%3c/svg%3e");
 	background-repeat: no-repeat;
 	background-size: 0.9rem;
 	background-position: center;
 	transition: transform 0.2s ease-in-out;
+
+
 }
 
+/*.table-custom> :not(caption) > * > * {
+	padding: 0.5rem 0.1rem !important;
+	margin: 0.1rem 0.1rem;
+	background-color: var(--bs-table-bg);
+	border-bottom-width: 0px;
+	box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}*/
+
+.table-custom thead >*{
+	padding: 10rem 10rem !important;
+}
+
+.table-custom tbody > * >td{
+	padding: 0.1rem 0.1rem !important;
+}
 @media (min-width: 992px) {
 
 	.col-lg-3k5 {

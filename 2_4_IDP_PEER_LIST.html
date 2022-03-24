@@ -14,7 +14,7 @@
 		<div class="container-fluid content">
 			<div class="header">
 				<div class="container-fluid">
-					<nav class="d-flex justify-content-between my-2 position-relative">
+					<nav class="d-flex justify-content-between my-3 mb-mobile-0 position-relative">
 						<a class="" href="#">
 							<img src="assets/img/logo-berwarna.png" alt="" class="align-text-top vw-mobile-50 vw-20">
 						</a>
@@ -34,9 +34,9 @@
 								<a class="nav-link text-dark"><i class="fa-solid fa-fill-drip"></i></a>
 							</li>
 							<li class="nav-item text-white">
-								<button class="navbar-toggler-custom" type="button">
+								<a class="navbar-toggler-custom text-dark">
 									<i class="fa-solid fa-bars"></i>
-								</button>
+								</a>
 							</li>
 							<div class="navbar-profile collapse show">
 								<div class="d-flex justify-content-end navbar-custom w-100 align-items-center">
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<div class="main-content w-100 fs-mobile-8">
-				<div class="row d-flex justify-content-center p-4">
+				<div class="row d-flex justify-content-center px-4">
 					<div class="col-1 d-none-mobile">
 						<div class="sidebar-button bg-orange p-4 rounded-r-10px">
 							<ul class="navbar-nav">
@@ -86,7 +86,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="card card-login card-shadow rounded-10px fs-mobile-8">
+						<div class="card card-login shadow rounded-10px fs-mobile-8">
 							<div class="card-header bg-gradient-orange text-white fw-bold rounded-trl-10px">
 								IDP Peer Assignment 2020-2
 							</div>
@@ -232,55 +232,63 @@
 													<td>
 														<button class="btn bg-green text-white rounded-10px fs-mobile-8" data-bs-toggle="modal" data-bs-target="#modal2">Show</button>
 														<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-															<div class="modal-dialog modal-lg modal-dialog-scorallable">
+															<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scorallable">
 																<div class="modal-content rounded-10px border-0">
 																	<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0">
-																		<h5 class="modal-title fs-mobile-7" id="exampleModalLabel">Peer List</h5>
+																		<h5 class="modal-title" id="exampleModalLabel">Peer List</h5>
 																	</div>
 																	<div class="modal-body">
-																		<table class="table table-borderless mt-2 table-striped">
-																			<thead class="bg-gradient-orange text-white">
-																				<tr class="text-center">
-																					<th>No</th>
-																					<th>Peer Name</th>
-																					<th>Peer Code</th>
-																					<th>Submit Date</th>
-																					<th>Bobot (%)</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<tr>
-																					<td>1</td>
-																					<td>(20130256) CH. Whidya Utami</td>
-																					<td>AAL</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>25.00</td>
-																				</tr>
-																				<tr>
-																					<td>1</td>
-																					<td>(20070031) Damelina Basauli Tambunan</td>
-																					<td>AL</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>25.00</td>
-																				</tr>
-																				<tr>
-																					<td>1</td>
-																					<td>(2006033) David Sukardi Kodrat</td>
-																					<td>PEER1</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>16.67</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
-																	<div class="d-flex justify-content-between px-2 py-2 align-items-center">
-																		<div class="d-flex justify-content-between w-100 align-items-center px-5">
-																			<label class="text-orange">Code:</label>
-																			<label>AL: Atasan Langsung</label>
-																			<label for="">AL: Atasan Tidak Langusng</label>
-																			<label for="">Peer: Peer Anda</label>
+																		<div class="table-responsive">
+																			<table class="table table-borderless mt-2 table-striped w-vh-mobile-75">
+																				<thead class="bg-gradient-orange text-white">
+																					<tr class="text-center">
+																						<th>No</th>
+																						<th>Peer Name</th>
+																						<th>Peer Code</th>
+																						<th>Submit Date</th>
+																						<th>Bobot (%)</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td>1</td>
+																						<td>(20130256) CH. Whidya Utami</td>
+																						<td>AAL</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>25.00</td>
+																					</tr>
+																					<tr>
+																						<td>1</td>
+																						<td>(20070031) Damelina Basauli Tambunan</td>
+																						<td>AL</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>25.00</td>
+																					</tr>
+																					<tr>
+																						<td>1</td>
+																						<td>(2006033) David Sukardi Kodrat</td>
+																						<td>PEER1</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>16.67</td>
+																					</tr>
+																				</tbody>
+																			</table>
 																		</div>
-																		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																	</div>
+																	<div class="container-fluid">
+																		<div class="row">
+																			<div class="col-2">
+																				<label class="text-orange">Code:</label>
+																			</div>
+																			<div class="col-10">
+																				<label class="col-5">AL: Atasan Langsung</label>
+																				<label class="col-6">AL: Atasan Tidak Langusng</label>
+																				<label class="col-5">Peer: Peer Anda</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="modal-footer border-0">
+																		<button type="button" class="btn btn-secondary fs-mobile-8" data-bs-dismiss="modal">Close</button>
 																	</div>
 																</div>
 															</div>
@@ -301,55 +309,63 @@
 													<td>
 														<button class="btn bg-green text-white rounded-10px fs-mobile-8" data-bs-toggle="modal" data-bs-target="#modal3">Show</button>
 														<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-															<div class="modal-dialog modal-lg modal-dialog-scorallable">
+															<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scorallable">
 																<div class="modal-content rounded-10px border-0">
 																	<div class="modal-header bg-gradient-orange rounded-trl-10px text-white border-0">
 																		<h5 class="modal-title" id="exampleModalLabel">Peer List</h5>
 																	</div>
 																	<div class="modal-body">
-																		<table class="table table-borderless mt-2 table-striped">
-																			<thead class="bg-gradient-orange text-white">
-																				<tr class="text-center">
-																					<th>No</th>
-																					<th>Peer Name</th>
-																					<th>Peer Code</th>
-																					<th>Submit Date</th>
-																					<th>Bobot (%)</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<tr>
-																					<td>1</td>
-																					<td>(20130256) CH. Whidya Utami</td>
-																					<td>AAL</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>25.00</td>
-																				</tr>
-																				<tr>
-																					<td>1</td>
-																					<td>(20070031) Damelina Basauli Tambunan</td>
-																					<td>AL</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>25.00</td>
-																				</tr>
-																				<tr>
-																					<td>1</td>
-																					<td>(2006033) David Sukardi Kodrat</td>
-																					<td>PEER1</td>
-																					<td>2021.07.26 15:21:51</td>
-																					<td>16.67</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
-																	<div class="d-flex justify-content-between px-2 py-2 align-items-center">
-																		<div class="d-flex justify-content-between w-100 align-items-center px-5">
-																			<label class="text-orange">Code:</label>
-																			<label>AL: Atasan Langsung</label>
-																			<label for="">AL: Atasan Tidak Langusng</label>
-																			<label for="">Peer: Peer Anda</label>
+																		<div class="table-responsive">
+																			<table class="table table-borderless mt-2 table-striped w-vh-mobile-75">
+																				<thead class="bg-gradient-orange text-white">
+																					<tr class="text-center">
+																						<th>No</th>
+																						<th>Peer Name</th>
+																						<th>Peer Code</th>
+																						<th>Submit Date</th>
+																						<th>Bobot (%)</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td>1</td>
+																						<td>(20130256) CH. Whidya Utami</td>
+																						<td>AAL</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>25.00</td>
+																					</tr>
+																					<tr>
+																						<td>1</td>
+																						<td>(20070031) Damelina Basauli Tambunan</td>
+																						<td>AL</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>25.00</td>
+																					</tr>
+																					<tr>
+																						<td>1</td>
+																						<td>(2006033) David Sukardi Kodrat</td>
+																						<td>PEER1</td>
+																						<td>2021.07.26 15:21:51</td>
+																						<td>16.67</td>
+																					</tr>
+																				</tbody>
+																			</table>
 																		</div>
-																		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																	</div>
+																	<div class="container-fluid">
+																		<div class="row">
+																			<div class="col-2">
+																				<label class="text-orange">Code:</label>
+																			</div>
+																			<div class="col-10">
+																				<label class="col-5">AL: Atasan Langsung</label>
+																				<label class="col-6">AL: Atasan Tidak Langusng</label>
+																				<label class="col-5">Peer: Peer Anda</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="modal-footer border-0">
+																		<button type="button" class="btn btn-secondary fs-mobile-8" data-bs-dismiss="modal">Close</button>
 																	</div>
 																</div>
 															</div>
@@ -369,49 +385,56 @@
 			</div>
 		</div>
 	</div>
-	<footer class="bg-white">
-		<div class="container fs-7 fs-mobile-8 pt-3">
-			<div class="row d-flex justify-content-between social-media">
-				<div class="col-6 py-0  d-flex align-items-center justify-content-start justify-content-center-mobile">
-					<p class="text-secondary fw-bold align-middle fs-6 d-flex justify-content-center align-items-center">Tech Support <span class="fw-bold fs-4 ms-2"><i class="fa-brands fa-whatsapp-square"></i></span></p>
+	<footer class="bg-white ">
+		<div class="container py-2 fs-7">
+			<div class="row d-flex justify-content-between social-media align-items-center">
+				<div class="col-6 d-flex align-items-center justify-content-start">
+					<div class="d-flex align-items-center justify-content-between text-white pb-0">
+						<label class="text-secondary fw-bold fs-6 d-flex justify-content-center align-items-center fs-mobile-7">Tech Support <span class="fw-bold ms-2"><svg width="1.4rem" height="1.4rem" viewBox="0 0 324 334" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="162" cy="162" r="162" fill="#797979"/>
+							<path d="M31 250.5L84.5 269L97 309L19 334L31 250.5Z" fill="#797979"/>
+							<path d="M111.894 70.8909C122.262 85.2492 127.486 94.4994 132.929 118.886C130.077 119.965 115.19 140.598 116.187 144.17C117.184 147.741 143.483 193.265 188.308 205.878C193.567 196.584 198.94 190.539 211.061 178.881C231.226 181.771 241.855 187.233 260 201.593C259.827 220.186 257.177 229.676 240.682 242.303C214.114 253.352 196.226 251.266 158.687 232.018C107.987 199.959 91.883 177.187 68.9647 134.313C63.817 101.714 68.1023 87.4581 90 70.0338C96.85 68.5724 101.39 68.4921 111.894 70.8909Z" fill="white"/>
+						</svg>
+					</span></label>
 				</div>
-				<div class="col-6 d-flex align-items-center justify-content-end justify-content-center-mobile">
-					<div class="d-flex align-items-center justify-content-between text-white">
-						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-twitter"></i></p>
-						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-facebook"></i></p>
-						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-youtube"></i></p>
-						<p class="px-1 mx-2 bg-secondary rounded-100"><i class="fa-brands fa-linkedin-in"></i></p>
-					</div>
+			</div>
+			<div class="col-6 d-flex align-items-center justify-content-end">
+				<div class="d-flex align-items-center justify-content-between text-white">
+					<p class="icon-footer bg-secondary rounded-100 fs-6"><i class="fa-brands fa-twitter"></i></p>
+					<p class="icon-footer bg-secondary rounded-100 fs-6"><i class="fa-brands fa-facebook-f"></i></p>
+					<p class="icon-footer bg-secondary rounded-100 fs-7"><i class="fa-brands fa-youtube"></i></p>
+					<p class="icon-footer bg-secondary rounded-100 fs-8"><i class="fa-brands fa-linkedin-in"></i></p>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid text-white bg-gradient-orange py-4 py-mobile-1 px-0 position-relative">
-			<div class="row d-flex justify-content-between mx-5 mx-mobile-0 fs-7">
-				<div class="footer-left col-12 col-lg-3 mb-mobile-2">
-					<ul class="navbar-nav">
-						<li class="nav-item fw-bold fs-6">
-							Get in Touch with Us
+	</div>
+	<div class="container-fluid text-white bg-gradient-orange py-4 py-mobile-1 px-0 position-relative">
+		<div class="row d-flex justify-content-between mx-5 mx-mobile-0 fs-7">
+			<div class="footer-left col-12 col-lg-3 mb-mobile-2">
+				<ul class="navbar-nav">
+					<li class="nav-item fw-bold fs-6 fs-mobile-8">
+						Get in Touch with Us
+					</li>
+				</ul>
+			</div>
+			<div class="footer-right col-12 col-lg-9">
+				<div class="d-flex justify-content-between align-items-end">
+					<ul class="navbar-nav col-lg-8 col-6">
+						<li class="nav-item d-flex align-items-start">
+							<i class="fa-solid fa-location-dot me-1 py-1"></i>
+							<label class="fs-mobile-8 fs-6">CintraLand CBD Boulevard, Surabaya, Indonesia, 60219</label>
+						</li>
+					</ul>
+					<ul class="navbar-nav col-lg-4 col-6 text-end text-start-mobile ps-3">
+						<li class="nav-item fs-6 fs-mobile-8">
+							&copy; 2022 | by ICT Universitas Ciputra
 						</li>
 					</ul>
 				</div>
-				<div class="footer-right col-12 col-lg-9">
-					<div class="d-flex justify-content-between">
-						<ul class="navbar-nav col-lg-8 col-6">
-							<li class="nav-item d-flex align-items-start">
-								<i class="fa-solid fa-location-dot me-1 py-1"></i>
-								<p>CintraLand CBD Boulevard, Surabaya, Indonesia, 60219</p>
-							</li>
-						</ul>
-						<ul class="navbar-nav col-lg-4 col-6 text-end text-start-mobile ps-3">
-							<li class="nav-item">
-								2022 | by ICT Universitas Ciputra
-							</li>
-						</ul>
-					</div>
-				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/fontawesome/js/all.js"></script>

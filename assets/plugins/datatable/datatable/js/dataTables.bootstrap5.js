@@ -46,7 +46,7 @@ var DataTable = $.fn.dataTable;
 /* Set the defaults for DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
-		"<'row'<'col-sm-6 col-5 px-mobile-0 mx-mobile-0'l><'col-sm-6 col-6 px-mobile-0 mx-mobile-0'f>>" +
+		"<'row'<'col-sm-6 col-6 px-mobile-0 ms-mobile-0'l><'col-sm-6 col-6 px-mobile-0 mx-mobile-0'f>>" +
 		"<'row'<'col-sm-12 table-responsive'tr>>" +
 		"<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
 	renderer: 'bootstrap'
