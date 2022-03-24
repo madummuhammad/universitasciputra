@@ -1,4 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@media (min-width: 1400px) {
+	.vh-over-125{
+		height: 125vh;
+	}
+
+	.vh-over-100{
+		height: 100vh;
+	}
+
+	.vh-over-90{
+		height: 90vh;
+	}
+
+	.position-absolute-over{
+		position: absolute;
+	}
+	/*footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}*/
+}
 *{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -6,6 +29,11 @@
 .content{
 	position: relative;
 
+}
+
+.col-0k5{
+	flex: 0 0 auto;
+	width: 4.3%;
 }
 
 /*Background*/
@@ -72,6 +100,10 @@
 
 .bg-red{
 	
+}
+
+.bg-tfooter-dark{
+	background-color: #565656;
 }
 
 .btn-sidebar{
@@ -266,6 +298,10 @@
 	width: 8vw;
 }
 
+.w-130px{
+	width: 130px;
+}
+
 .w-100vh{
 	width: 100vh;
 }
@@ -276,8 +312,16 @@
 
 
 /*Height*/
+
+.vh-125{
+	height: 125vh;
+}
 .vh-100{
 	height: 100vh !important;
+}
+
+.vh-90{
+	height: 90vh;
 }
 
 .vh-80{
@@ -394,6 +438,10 @@
 
 .text-grey{
 	color: #828282;
+}
+
+.text-abu-icon{
+	color: #D9D9D9;
 }
 
 .text-old-blue{
@@ -514,8 +562,9 @@
 
 
 /*landing page staff*/
-.header-logo img{
-	width: 100%;
+.header-logo{
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
 .img-category{
@@ -616,10 +665,10 @@
 
 /*Job Portal Index*/
 .section-head-index{
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/section-head.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 }
 
 /*Topbar*/
@@ -658,6 +707,7 @@
 .sidebar-button{
 	position: absolute;
 	left: 0;
+	margin-right: -100px;
 }
 
 /*Accordion*/
