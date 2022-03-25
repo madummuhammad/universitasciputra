@@ -52,6 +52,45 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     }
+
+    var input_select=$(".multiple-select .input-select");
+    var select_option=$(".select-option");
+    var multiple_select=$(".multiple-select");
+    for (let i = 0; i < multiple_select.length; i++) {
+        $(multiple_select[i]).on('mouseenter',function(){
+            $(select_option[i]).addClass('active');
+            $(multiple_select[i]).on('mouseleave',function(){
+                $(select_option[i]).removeClass('active');
+
+            })
+            var option = $(".option");
+            for (let b = 0; b < option.length; b++) {
+                option[b].onclick = function () {
+                    var id_target = $(this).data('target');
+                    var a=$(this).find("input").attr('checked');
+                    var val=$(this).find("input").val();
+                    if (a=="checked") {
+                        var val_start=$(input_select[i]).val();
+                        var val_new=val_start.split(",");
+                        $(this).find("input").removeAttr('checked');
+
+                        const index = val_new.indexOf(val)
+                        if (index > -1) { val_new.splice(index, 1) }
+                            $(input_select[i]).val(val_new);
+
+                    } else {
+                        var val_start=$(input_select[i]).val();
+                        $(this).find("input").attr('checked','true');
+                        if (val_start=="") {
+                            $(input_select[i]).val(val);
+                        } else {
+                            $(input_select[i]).val(val_start+","+val);
+                        }
+                    }
+                }
+            }
+        })
+    }
 })
 
 $(".box-custom-select").toggle();

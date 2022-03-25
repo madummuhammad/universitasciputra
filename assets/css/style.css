@@ -313,6 +313,10 @@
 
 /*Height*/
 
+.min-vh-90{
+	min-height: 90vh;
+}
+
 .vh-125{
 	height: 125vh;
 }
@@ -934,8 +938,40 @@ caret-color:transparent;
 	background-size: 0.9rem;
 	background-position: center;
 	transition: transform 0.2s ease-in-out;
+}
 
+.custom-form-check-input:disabled{
+	opacity: 1 !important;
+}
 
+.input-select:disabled {
+	background-color: white !important;
+}
+
+.multiple-select .select-option li{
+	list-style: none;
+}
+
+.select-option{
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+}
+
+.overflow-y-scroll{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.select-option{
+	display: none;
+	max-height: 120px;
+	overflow-y: scroll;
+}
+
+.select-option.active{
+	display: block;
 }
 
 /*.table-custom> :not(caption) > * > * {
